@@ -1,12 +1,12 @@
 /*
 * Copyright(C) 2010,Hikvision Digital Technology Co., Ltd 
 * 
-* File   name£ºCapPicture.h
-* Discription£º
-* Version    £º1.0
-* Author     £ºpanyd
-* Create Date£º2010_3_25
-* Modification History£º
+* File   nameï¿½ï¿½CapPicture.h
+* Discriptionï¿½ï¿½
+* Version    ï¿½ï¿½1.0
+* Author     ï¿½ï¿½panyd
+* Create Dateï¿½ï¿½2010_3_25
+* Modification Historyï¿½ï¿½
 */
 
 int Demo_Capture();
