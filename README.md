@@ -1,14 +1,13 @@
 ### Hikvision-downloader
 
-1. Logs in to Hikvision camera website
+Download visible and thermal images from Hikvision IP camera using HTTP API.
 
-2. Selects thermal camera
+* Downloader scripts using sh, python selenium, wget and requests. The requests
+script is recommended.
 
-3. Downloads image
+* Conversion from RGB to temperature using JSON min, max values
 
-### Non-python Requirements
-
-Geckodriver must be installed on your system
+Selenium script requires geckodriver to be installed on your system
 
 ```
 sudo apt-get install firefox-geckodriver
