@@ -6,3 +6,7 @@
 .vscode/
 
 *.dpp
+
+raw/
+
+build/downloader

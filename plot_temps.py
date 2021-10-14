@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-data = np.fromfile("20211013_155855.dat", dtype=np.float32)
+data = np.fromfile("raw/20211013_155855.dat", dtype=np.float32)
 array = np.reshape(data, [120, 160])
 
 plt.imshow(array, interpolation='none')

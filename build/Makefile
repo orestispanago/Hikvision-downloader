@@ -4,10 +4,10 @@ CXX   =  g++
 CXXFLAGS = -Wall -Wno-strict-aliasing -Wno-unused-variable
 
 #包含头文件路径
-SUBDIR   = $(shell ls ../../src -R | grep /)
+SUBDIR   = $(shell ls ../src -R | grep /)
 SUBDIRS  = $(subst :,/,$(SUBDIR))
-INCPATHS = $(subst ../../,-I../../,$(SUBDIRS))
-INCPATHS += -I../../include/
+INCPATHS = $(subst ../,-I../,$(SUBDIRS))
+INCPATHS += -I../include/
 
 VPATH = $(subst : ,:,$(SUBDIR))./
 SOURCE = $(foreach dir,$(SUBDIRS),$(wildcard $(dir)*.cpp))
@@ -21,7 +21,7 @@ OBJSPATH = $(addprefix obj/,$(OBJFILE))
 
 LIBPATH = ../lib/
 LIBS = -Wl,-rpath=./:./HCNetSDKCom:../lib -lhcnetsdk
-EXE = sdkTest
+EXE = downloader
 
 $(EXE):$(OBJFILE)
 	$(CXX) -L$(LIBPATH)  -o $(EXE) $(OBJFILE) $(INCPATHS) $(LIBS)

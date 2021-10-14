@@ -4,12 +4,14 @@ This branch is based on the ```consoleDemo``` from the [Hikvision SDK](https://w
 
 ### Instructions
 
-Add the camera IP and your credentials in ```consoleMail.cpp``` and ```CapPicture.cpp```
+Set the camera IP and your credentials in ```main.cpp```
 
-From the ```linux64/proj``` run:
+From the ```build``` directory run:
 
 ```make```
 
 Run the executable from the same folder:
 
-```./sdkTest``` 
+```./downloader``` 
+
+Images and binary file are saved in ```raw``` folder.
